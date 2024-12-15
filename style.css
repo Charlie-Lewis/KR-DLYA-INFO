@@ -1,0 +1,104 @@
+body {
+   background-color: #F6F6F6; 
+   font-family: 'Arial', sans-serif; 
+   font-size: 18px;
+   margin: 0;
+   padding: 0;
+}
+
+.main-title {
+   text-align: center;
+   color: #333;
+   font-family: 'Verdana', sans-serif;
+   margin: 20px 0;
+}
+
+.city-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-tashkent, .city-london, .city-moscow {
+   flex: 1;
+   text-align: center;
+   color: #333;
+}
+
+.city-image-right, .city-image-left {
+   width: 200px;
+   height: 125px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.more-info {
+   margin-top: 30px;
+   text-align: center;
+}
+
+.more-info strong {
+   font-weight: bold;
+}
+
+.more-info ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.more-info li {
+   margin: 5px 0;
+}
+
+.more-info a {
+   text-decoration: none;
+   color: #0066cc; 
+   font-weight: bold;
+}
+
+.more-info a:hover {
+   text-decoration: underline;
+}
+
+.city-image-left {
+   order: 1;
+}
+
+.city-image-right {
+   order: 2;
+}
+
+@media (min-width: 1024px) {
+   .city-info {
+       flex-direction: row;
+   }
+
+   .city-info p {
+       flex: 1;
+       text-align: center;
+   }
+
+   .city-image-left, .city-image-right {
+       margin: 0 20px;
+   }
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 20px;
+   margin-top: 30px;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+   margin: 5px 0;
+   font-size: 16px;
+}
